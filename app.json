@@ -114,12 +114,12 @@
     },
     "MMCONNECT_SERVER": {
       "description": "If you are bridging from the CareLink service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
-      "value": "US",
-      "required": false
+      "value": "EU",
+      "required": true
     },
     "MONGO_COLLECTION": {
       "description": "The Mongo collection where CGM data is stored.",
-      "value": "entries",
+      "value": "maya",
       "required": true
     },
     "NIGHT_MODE": {
