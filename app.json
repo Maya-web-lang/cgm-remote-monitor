@@ -54,22 +54,22 @@
     },
     "BG_HIGH": {
       "description": "Urgent High BG threshold, triggers the ALARM_URGENT_HIGH alarm. Must be set in mg/dL, even if you use mmol/L (multiply a mmol/L value by 18 to change it to mg/dl).",
-      "value": "260",
+      "value": "200",
       "required": false
     },
     "BG_LOW": {
       "description": "Urgent Low BG threshold, triggers the ALARM_URGENT_LOW alarm. Must be set in mg/dL, even if you use mmol/L (multiply a mmol/L value by 18 to change it to mg/dl).",
-      "value": "55",
+      "value": "50",
       "required": false
     },
     "BG_TARGET_BOTTOM": {
       "description": "Low BG threshold, triggers the ALARM_LOW alarm. Must be set in mg/dL, even if you use mmol/L (multiply a mmol/L value by 18 to change it to mg/dl).",
-      "value": "80",
+      "value": "70",
       "required": false
     },
     "BG_TARGET_TOP": {
       "description": "High BG threshold, triggers the ALARM_HIGH alarm. Must be set in mg/dL, even if you use mmol/L (multiply a mmol/L value by 18 to change it to mg/dl).",
-      "value": "180",
+      "value": "140",
       "required": false
     },
     "BRIDGE_PASSWORD": {
@@ -79,8 +79,8 @@
     },
     "BRIDGE_SERVER": {
       "description": "If you are bridging from the Dexcom Share service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
-      "value": "US",
-      "required": false
+      "value": "EN",
+      "required": true
     },
     "BRIDGE_USER_NAME": {
       "description": "Your Dexcom account username, to receive CGM data from the Dexcom Share service. Also make sure to include 'bridge' in your ENABLE line.",
@@ -100,7 +100,7 @@
     "ENABLE": {
       "description": "Plugins to enable for your site. Must be a space-delimited, lower-case list. Include the word 'bridge' here if you are receiving data from the Dexcom Share service. Include 'mmconnect' if you are bridging from the MiniMed CareLink service.",
       "value": "careportal basal",
-      "required": false
+      "required": true
     },
     "MMCONNECT_USER_NAME": {
       "description": "Your CareLink account username, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.",
